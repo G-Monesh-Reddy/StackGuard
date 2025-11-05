@@ -8,7 +8,7 @@ export default function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/stackGuard" element={<AuthPage />} />
+                <Route path="/" element={<AuthPage />} />
                 <Route
                     path="/config"
                     element={
