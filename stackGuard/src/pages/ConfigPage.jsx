@@ -9,11 +9,11 @@ export default function ConfigPage() {
     const { setConfigKey } = useAuth();
 
     const handleVerify = () => {
-        if (key.length >= 5 && key.length <= 10) {
+        if (key.length >= 100 && key.length <= 1000) {
             setConfigKey(key);
             navigate("/dashboard");
         } else {
-            alert("Public key must be between 5 and 10 characters.");
+            alert("Public key must be between 100 and 1000 characters.");
         }
     };
 
